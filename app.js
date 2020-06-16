@@ -30,7 +30,7 @@ http
         }
         res.end(data)
       })
-    } 
+    }
     else if (pathname.indexOf('/public/') === 0) {
       fs.readFile('.' + pathname, function (err, data) {
         if (err) {
